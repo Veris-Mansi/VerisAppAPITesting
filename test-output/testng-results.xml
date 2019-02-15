@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="11814" started-at="2019-02-15T06:52:02Z" finished-at="2019-02-15T06:52:14Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="11814" started-at="2019-02-15T06:52:02Z" finished-at="2019-02-15T06:52:14Z">
+      <class name="VerisAPI.RequestOTPTest">
+        <test-method status="PASS" signature="InvalidCountryCode()[pri:1, instance:VerisAPI.RequestOTPTest@59f99ea]" name="InvalidCountryCode" duration-ms="4587" started-at="2019-02-15T06:52:02Z" description="Invalid country code" finished-at="2019-02-15T06:52:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidCountryCode -->
+        <test-method status="PASS" signature="InvalidMobileNoNine()[pri:2, instance:VerisAPI.RequestOTPTest@59f99ea]" name="InvalidMobileNoNine" duration-ms="1620" started-at="2019-02-15T06:52:07Z" description="Nine digit mobile no" depends-on-methods="VerisAPI.RequestOTPTest.InvalidCountryCode" finished-at="2019-02-15T06:52:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidMobileNoNine -->
+        <test-method status="PASS" signature="InvalidMobileNoEleven()[pri:3, instance:VerisAPI.RequestOTPTest@59f99ea]" name="InvalidMobileNoEleven" duration-ms="1563" started-at="2019-02-15T06:52:08Z" description="Eleven digit mobile no" depends-on-methods="VerisAPI.RequestOTPTest.InvalidMobileNoNine" finished-at="2019-02-15T06:52:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidMobileNoEleven -->
+        <test-method status="PASS" signature="emptyCredentials()[pri:4, instance:VerisAPI.RequestOTPTest@59f99ea]" name="emptyCredentials" duration-ms="1578" started-at="2019-02-15T06:52:10Z" description="Empty Credentials" depends-on-methods="VerisAPI.RequestOTPTest.InvalidMobileNoEleven" finished-at="2019-02-15T06:52:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyCredentials -->
+        <test-method status="PASS" signature="RequestOTPTest()[pri:5, instance:VerisAPI.RequestOTPTest@59f99ea]" name="RequestOTPTest" duration-ms="2392" started-at="2019-02-15T06:52:11Z" description="Requesting OTP for correct credentials" depends-on-methods="VerisAPI.RequestOTPTest.emptyCredentials" finished-at="2019-02-15T06:52:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RequestOTPTest -->
+      </class> <!-- VerisAPI.RequestOTPTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
