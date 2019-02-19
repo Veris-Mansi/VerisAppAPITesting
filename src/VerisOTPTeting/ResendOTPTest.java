@@ -1,11 +1,10 @@
 //Testcases
 
-
 //Valid mobile no
 //Invalid mobile no(9 digit)
 //Invalid mobile no 11 digit
 //Empty Mobile no
-package VerisAPI;
+package VerisOTPTeting;
 
 import static io.restassured.RestAssured.given;
 
@@ -18,9 +17,9 @@ import Files.PayLoadData;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 
-public class RequestOTPTest {
+public class ResendOTPTest {
 	@Test(priority=5,description="Requesting OTP for correct credentials",dependsOnMethods="emptyCredentials")
-	public static void RequestOTPTest()
+	public static void ResendOTPTest()
 	{
 		RestAssured.baseURI="https://sandbox.veris.in";
 		given().

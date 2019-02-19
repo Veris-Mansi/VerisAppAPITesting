@@ -1,4 +1,4 @@
-package VerisAPI;
+package VerisOTPTeting;
 import static io.restassured.RestAssured.given;
 
 import org.testng.annotations.Test;

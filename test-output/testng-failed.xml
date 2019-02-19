@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="VerisAPI.GetProfileOTP">
+      <class name="FormBuilderTesting.CreateWorkflowTest">
         <methods>
-          <include name="getDataInvalidToken"/>
+          <include name="MapWorkflow"/>
         </methods>
-      </class> <!-- VerisAPI.GetProfileOTP -->
+      </class> <!-- FormBuilderTesting.CreateWorkflowTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

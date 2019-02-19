@@ -2,7 +2,7 @@
 //test case2: valid token id but user info doesn't exist
 //test case 3: valid token id
 //test case 4: empty token
-package VerisAPI;
+package VerisOTPTeting;
 
 import org.testng.annotations.Test;
 
