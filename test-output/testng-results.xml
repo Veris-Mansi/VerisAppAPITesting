@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6844" started-at="2019-02-19T14:21:20Z" finished-at="2019-02-19T14:21:27Z">
+  <suite name="Default suite" duration-ms="7352" started-at="2019-02-20T12:43:10Z" finished-at="2019-02-20T12:43:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6844" started-at="2019-02-19T14:21:20Z" finished-at="2019-02-19T14:21:27Z">
-      <class name="FormBuilderTesting.CreateWorkflowTest">
-        <test-method status="PASS" signature="AddWorkFlow()[pri:0, instance:FormBuilderTesting.CreateWorkflowTest@59f99ea]" name="AddWorkFlow" duration-ms="5141" started-at="2019-02-19T14:21:20Z" description="Adding WorkFlow" finished-at="2019-02-19T14:21:25Z">
+    <test name="Default test" duration-ms="7352" started-at="2019-02-20T12:43:10Z" finished-at="2019-02-20T12:43:17Z">
+      <class name="FormBuilderTesting.AddWorkflow">
+        <test-method status="PASS" signature="invalidToken()[pri:0, instance:FormBuilderTesting.AddWorkflow@2d72f75e]" name="invalidToken" duration-ms="1905" started-at="2019-02-20T12:43:10Z" description="Adding workflow with invalid token" finished-at="2019-02-20T12:43:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidToken -->
+        <test-method status="PASS" signature="invalidOrganization()[pri:0, instance:FormBuilderTesting.AddWorkflow@2d72f75e]" name="invalidOrganization" duration-ms="1597" started-at="2019-02-20T12:43:12Z" description="invalid organization id" depends-on-methods="FormBuilderTesting.AddWorkflow.invalidToken" finished-at="2019-02-20T12:43:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidOrganization -->
+        <test-method status="PASS" signature="AddWorkFlow()[pri:0, instance:FormBuilderTesting.AddWorkflow@2d72f75e]" name="AddWorkFlow" duration-ms="3703" started-at="2019-02-20T12:43:13Z" description="Adding WorkFlow" depends-on-methods="FormBuilderTesting.AddWorkflow.invalidOrganization" finished-at="2019-02-20T12:43:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddWorkFlow -->
-        <test-method status="PASS" signature="MapWorkflow()[pri:0, instance:FormBuilderTesting.CreateWorkflowTest@59f99ea]" name="MapWorkflow" duration-ms="1654" started-at="2019-02-19T14:21:25Z" description="Mapping WorkFlow with venue" finished-at="2019-02-19T14:21:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MapWorkflow -->
-      </class> <!-- FormBuilderTesting.CreateWorkflowTest -->
+      </class> <!-- FormBuilderTesting.AddWorkflow -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
