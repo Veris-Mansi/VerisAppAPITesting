@@ -3,14 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="FormBuilderTesting.MapWorkFlow">
+      <class name="FormBuilderTesting.CompleeTesting">
         <methods>
-          <include name="invalidToken"/>
+          <include name="getUnfixScreens"/>
+          <include name="removeFormField"/>
+          <include name="removeExistingScreens"/>
+          <include name="AddWorkFlow"/>
+          <include name="addCustomScreens"/>
           <include name="MapWorkflow"/>
-          <include name="invalidVenueId"/>
-          <include name="invalidOrganization"/>
+          <include name="AddExistingScreeens"/>
+          <include name="MapCustomScreen"/>
+          <include name="EditCustomScreen"/>
         </methods>
-      </class> <!-- FormBuilderTesting.MapWorkFlow -->
+      </class> <!-- FormBuilderTesting.CompleeTesting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

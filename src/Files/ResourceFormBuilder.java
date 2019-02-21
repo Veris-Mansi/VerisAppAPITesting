@@ -95,7 +95,7 @@ public class ResourceFormBuilder {
 		String response=res.asString();
 		JsonPath path = new JsonPath(response);
 		int form_id=path.get("forms[0].id");
-		System.out.println("Custorm Form_id "+form_id);
+		System.out.println("Custorm Screen_id "+form_id);
 		return form_id;
 	}
 	public static String getUnfixScreens(int form_id)
@@ -110,5 +110,12 @@ public class ResourceFormBuilder {
 		return p;
 	}
 	
-	
+	public static String editForms(int form_id)
+	{
+		String id=String.valueOf(form_id);
+		
+		String s="api/v2/organization/6/forms/"+id+"/";
+		System.out.println(s);
+		return s;
+	}
 }

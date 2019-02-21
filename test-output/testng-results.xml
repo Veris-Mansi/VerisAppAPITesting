@@ -1,25 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7352" started-at="2019-02-20T12:43:10Z" finished-at="2019-02-20T12:43:17Z">
+  <suite name="Default suite" duration-ms="44031" started-at="2019-02-21T15:14:30Z" finished-at="2019-02-21T15:15:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7352" started-at="2019-02-20T12:43:10Z" finished-at="2019-02-20T12:43:17Z">
-      <class name="FormBuilderTesting.AddWorkflow">
-        <test-method status="PASS" signature="invalidToken()[pri:0, instance:FormBuilderTesting.AddWorkflow@2d72f75e]" name="invalidToken" duration-ms="1905" started-at="2019-02-20T12:43:10Z" description="Adding workflow with invalid token" finished-at="2019-02-20T12:43:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidToken -->
-        <test-method status="PASS" signature="invalidOrganization()[pri:0, instance:FormBuilderTesting.AddWorkflow@2d72f75e]" name="invalidOrganization" duration-ms="1597" started-at="2019-02-20T12:43:12Z" description="invalid organization id" depends-on-methods="FormBuilderTesting.AddWorkflow.invalidToken" finished-at="2019-02-20T12:43:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidOrganization -->
-        <test-method status="PASS" signature="AddWorkFlow()[pri:0, instance:FormBuilderTesting.AddWorkflow@2d72f75e]" name="AddWorkFlow" duration-ms="3703" started-at="2019-02-20T12:43:13Z" description="Adding WorkFlow" depends-on-methods="FormBuilderTesting.AddWorkflow.invalidOrganization" finished-at="2019-02-20T12:43:17Z">
+    <test name="Default test" duration-ms="44031" started-at="2019-02-21T15:14:30Z" finished-at="2019-02-21T15:15:14Z">
+      <class name="FormBuilderTesting.CompleteTesting">
+        <test-method status="PASS" signature="AddWorkFlow()[pri:1, instance:FormBuilderTesting.CompleteTesting@47c62251]" name="AddWorkFlow" duration-ms="27222" started-at="2019-02-21T15:14:30Z" description="Adding WorkFlow" finished-at="2019-02-21T15:14:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddWorkFlow -->
-      </class> <!-- FormBuilderTesting.AddWorkflow -->
+        <test-method status="PASS" signature="MapWorkflow()[pri:2, instance:FormBuilderTesting.CompleteTesting@47c62251]" name="MapWorkflow" duration-ms="1643" started-at="2019-02-21T15:14:57Z" description="Mapping WorkFlow with venue" depends-on-methods="FormBuilderTesting.CompleteTesting.AddWorkFlow" finished-at="2019-02-21T15:14:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MapWorkflow -->
+        <test-method status="PASS" signature="getUnfixScreens()[pri:3, instance:FormBuilderTesting.CompleteTesting@47c62251]" name="getUnfixScreens" duration-ms="1698" started-at="2019-02-21T15:14:59Z" description="Getting Unfix Screens" depends-on-methods="FormBuilderTesting.CompleteTesting.MapWorkflow" finished-at="2019-02-21T15:15:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUnfixScreens -->
+        <test-method status="PASS" signature="AddExistingScreeens()[pri:4, instance:FormBuilderTesting.CompleteTesting@47c62251]" name="AddExistingScreeens" duration-ms="1722" started-at="2019-02-21T15:15:01Z" description="Add default screens" depends-on-methods="FormBuilderTesting.CompleteTesting.getUnfixScreens" finished-at="2019-02-21T15:15:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddExistingScreeens -->
+        <test-method status="PASS" signature="removeExistingScreens()[pri:5, instance:FormBuilderTesting.CompleteTesting@47c62251]" name="removeExistingScreens" duration-ms="1617" started-at="2019-02-21T15:15:02Z" description="removeExistingScreens" depends-on-methods="FormBuilderTesting.CompleteTesting.AddExistingScreeens" finished-at="2019-02-21T15:15:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeExistingScreens -->
+        <test-method status="PASS" signature="addCustomScreens()[pri:6, instance:FormBuilderTesting.CompleteTesting@47c62251]" name="addCustomScreens" duration-ms="1699" started-at="2019-02-21T15:15:04Z" depends-on-methods="FormBuilderTesting.CompleteTesting.removeExistingScreens" finished-at="2019-02-21T15:15:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomScreens -->
+        <test-method status="PASS" signature="MapCustomScreen()[pri:7, instance:FormBuilderTesting.CompleteTesting@47c62251]" name="MapCustomScreen" duration-ms="1703" started-at="2019-02-21T15:15:06Z" depends-on-methods="FormBuilderTesting.CompleteTesting.addCustomScreens" finished-at="2019-02-21T15:15:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MapCustomScreen -->
+        <test-method status="PASS" signature="EditCustomScreen()[pri:8, instance:FormBuilderTesting.CompleteTesting@47c62251]" name="EditCustomScreen" duration-ms="1638" started-at="2019-02-21T15:15:07Z" depends-on-methods="FormBuilderTesting.CompleteTesting.MapCustomScreen" finished-at="2019-02-21T15:15:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditCustomScreen -->
+        <test-method status="PASS" signature="removeFormField()[pri:9, instance:FormBuilderTesting.CompleteTesting@47c62251]" name="removeFormField" duration-ms="1594" started-at="2019-02-21T15:15:09Z" depends-on-methods="FormBuilderTesting.CompleteTesting.EditCustomScreen" finished-at="2019-02-21T15:15:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeFormField -->
+        <test-method status="PASS" signature="removeCustomScreens()[pri:10, instance:FormBuilderTesting.CompleteTesting@47c62251]" name="removeCustomScreens" duration-ms="1588" started-at="2019-02-21T15:15:11Z" depends-on-methods="FormBuilderTesting.CompleteTesting.removeFormField" finished-at="2019-02-21T15:15:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeCustomScreens -->
+        <test-method status="PASS" signature="removeWorkFlow()[pri:11, instance:FormBuilderTesting.CompleteTesting@47c62251]" name="removeWorkFlow" duration-ms="1593" started-at="2019-02-21T15:15:12Z" depends-on-methods="FormBuilderTesting.CompleteTesting.removeCustomScreens" finished-at="2019-02-21T15:15:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeWorkFlow -->
+      </class> <!-- FormBuilderTesting.CompleteTesting -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
