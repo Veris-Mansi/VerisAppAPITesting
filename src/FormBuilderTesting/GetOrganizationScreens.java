@@ -28,20 +28,19 @@ public class GetOrganizationScreens {
 	{
 		ResourceFormBuilder.invalidOrganization();
 	}
-	
 	@Test
-	public void getUnfixScreens()
+	public void getScreens()
 	{
 		
 		RestAssured.baseURI="https://sandbox.veris.in";
 		Response res = given().
 		headers("Content-Type","application/json").headers("Authorization","token 8f62fd0d5c5d5f43c22bf18e841d7117b3f20514").
-		when().get(ResourceFormBuilder.getUnfixScreens(form_id)).
+		when().get(ResourceFormBuilder.screen()).
 		then().assertThat().statusCode(200).and().contentType(ContentType.JSON).extract().response();
 		String response=res.asString();
 		JsonPath path=new JsonPath(response);
 		int count=path.getInt("count");
 		System.out.println(count);
-		System.out.println("Reponse is "+response);
+		
 	}
 }

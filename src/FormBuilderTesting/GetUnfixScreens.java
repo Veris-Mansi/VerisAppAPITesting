@@ -14,7 +14,7 @@ import io.restassured.response.Response;
 
 public class GetUnfixScreens {
 
-	int form_id=49;
+	int form_id=85;
 	@Test(description="GEtUnfixScreens")
 	public void getUnfixScreens()
 	{
@@ -30,5 +30,18 @@ public class GetUnfixScreens {
 		System.out.println(count);
 		System.out.println("Reponse is "+response);
 		
+	}
+	
+	@Test(expectedExceptions=ArithmeticException.class)
+	public void test()
+	{
+		
+		int a=1/0;
+		System.out.println(a);
+	}
+	@Test(dependsOnMethods="test")
+	
+	public void a(){
+		System.out.println("hii");
 	}
 }

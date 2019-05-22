@@ -39,7 +39,7 @@ public class EditWorkflow {
 		
 	}
 	@Test(description="Editing WorkFlow",dependsOnMethods="invalidOrganization")
-	public void AddWorkFlow()
+	public void EditWorkFlow()
 	{
 		RestAssured.baseURI="https://sandbox.veris.in";
 		given().
